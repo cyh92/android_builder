@@ -17,7 +17,7 @@ jobs:
         name: Get project name
         run: echo "::set-output name=PROJECT::$(cat project-to-build)"
       - name: Clone project
-        run: git clone -b tv4.x --depth=1 https://gitee.com/cyh92/TVBoxOS project
+        run: git clone -b tv4.x https://gitee.com/cyh92/TVBoxOS project
       - name: Build the app
         working-directory: ./project
         run: |
